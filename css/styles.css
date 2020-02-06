@@ -1,13 +1,10 @@
 /*
 COLOR PALETTE
-https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
-#F7FFF7 - almost white
-#343434 - dark gray - almost black
-#2F3061 - blue dark
-#FFE66D - yellow
-#A1C6D7 - blue light
+#3902c4 - dark blue
+#fddec0 - light apricot
+#f3fc4e - gorse
+#fa6f68 - bittersweet
 */
-
 
 /* Global styles
 ------------------------------------*/
@@ -17,12 +14,11 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
 body {
-  color: #343434;
+  color: #3902c4;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   font-size: 15px;
   line-height: 1.5;
 }
@@ -30,20 +26,22 @@ img {
   width: 300px;
 }
 a {
-  color: #FFE66D;
+  text-decoration: none;
+  color: #fddec0;
 }
 a:hover {
   text-decoration: none;
+  color: #f3fc4e;
 }
 h1 {
-  font-size: 100px;
+  font-size: 80px;
   line-height: 1;
 }
 h2 {
-  font-size: 45px;
+  font-size: 35px;
 }
 h1, h2 {
-  font-family: 'Caveat', cursive;
+  font-family: 'PT Mono', monospace;
   font-weight: 400;
   margin: 0;
 }
@@ -63,40 +61,50 @@ h3 {
   margin: 0;
 }
 .divider > section {
-  border-bottom: 1px dashed #343434;
-  padding: 25px 0;
+  border-bottom: 8px dashed #f3fc4e;
+  padding: 20px 0;
 }
 .divider > section:last-of-type {
   border-bottom: none;
 }
 
-
 /* Profile
 ------------------------------------*/
 header {
-  background: #2F3061;
-  color: #F7FFF7;
+  background: #3902c4;
+  color: #fddec0;
 }
-
+.header a {
+  text-decoration: none;
+  color: #fa6f68;
+}
+.header a:hover {
+  text-decoration: none;
+  color: #fddec0;
+}
 
 /* Projects
 ------------------------------------*/
 .projects {
-  background: #F7FFF7;
+  background: #fddec0;
 }
 .projects a {
-  color: #2F3061;
+  color: #f3fc4e;
+}
+.projects a:hover{
+  color: #3902c4;
 }
 .projects .btn {
-  color: #F7FFF7;
-  background: #2F3061;
+  color: #f3fc4e;
+  background: #3902c4;
   text-decoration: none;
   padding: 8px;
   border-radius: 4px;
   display: inline-block;
 }
 .projects .btn:hover {
-  background: rgba(47, 48, 97, 80%);
+  background: #f3fc4e;
+  color: #3902c4;
 }
 .project-item {
   overflow: hidden;
@@ -105,39 +113,43 @@ header {
   margin-top: 0;
 }
 
-
 /* Work Experience
 ------------------------------------*/
 .work-experience {
-  background: #A1C6D7;
+  background: #f3fc4e;
+  color: #3902c4;
 }
-
-
+.work-experience a{
+  color: #fa6f68;
+}
+.work-experience a:hover{
+  color: #fddec0;
+}
 
 /* Education
 ------------------------------------*/
 .education {
-  background-image: url(../images/joanna-kosinska-unsplash.jpg);
+  background-image: url(../images/socks.jpg);
   background-size: cover;
-  background-position: top right;
+  background-position: top left;
   padding-bottom: 100px;
+  color: #3902c4;
 }
 .education p {
   width: 60%;
 }
 
-
 /* Contact Info
 ------------------------------------*/
 footer {
-  background: #343434;
-  color: #F7FFF7;
+  background: #fa6f68;
+  color: #3902c4;
+  text-align: center;
+  width: 100%;
 }
-.contact-list {
-  list-style-type: none;
-  padding: 0;
-}
-.contact-list a {
-  padding: 15px;
-  display: inline-block;
+footer li{
+  display:block;
+  float: left;
+  text-align:center;
+  width: 25%;
 }
